@@ -1,0 +1,65 @@
+ body{
+        background-color:black;
+       }
+
+        .filter{
+        display:flex;
+        padding:7px;
+
+        }
+        .box1{
+
+        padding:20px;
+        margin-left:50px;
+        margin-right:60px;
+        width:50%;
+        float:left;
+        border:1px solid white;
+
+        }
+        .box2{
+
+        padding:20px;
+        margin-right:50px;
+
+        width:50%;
+        border:1px solid white;
+
+
+        }
+    .box{
+
+    padding:30px;
+    border:1px solid white;
+    margin-top:60px;
+    margin-left:260px;
+    margin-right:20px;
+    margin-bottom:90px;
+    width:70%;
+
+    }
+    .btn{
+
+
+
+    }
+    p{
+    color:white;
+    font-size: 17px;
+    }
+    h1{
+    color:White;
+    margin-top:50px;
+    }
+    #btn1{
+    margin-top:23px;
+    margin-left:350px;
+    }
+    #btn2{
+    margin-top:23px;
+    margin-left:350px;
+    padding:7px;
+    padding-left:18px;
+    padding-right:18px;
+
+    }

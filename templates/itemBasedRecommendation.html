@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="static/itemBasedRecommendation.css">
+     <title>KN Movie Recommendation</title>
+    <link rel = "icon" href =
+	"https://st3.depositphotos.com/27847728/34645/v/600/depositphotos_346456758-stock-illustration-initial-kn-letter-logo-design.jpg"
+     type = "image/x-icon">
+
+
+</head>
+<body>
+
+<header>
+      <div class="link">
+       <a href="/" ><div class="icon icon-fill"><i class="fa fa-home" id="home"></i></div></a>
+        </div>
+     <div class="title">
+        <h1 class="Underline">Movie Recommendation <span>System</span></h1>
+     </div>
+         <h3> Showing Similar Movies: {{movie}}</h3>
+
+    </header>
+
+
+  <div class="movieSuggestionSection">
+
+
+      <div class="movieSuggestions">
+
+        <div class="movieCard">
+          <img class="image" src="https://www.syracuse.com/resizer/Cj7sp4D9A2b_4IW--YiyJgJKUiQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z4JXG2AZEZB55IGXLKTBGGXTDQ.jpeg" width="400" height="350" >
+          <br>
+          <div class="movie">{{ rec_movie[1] }}</div>
+        </div>
+         <div class="movieCard">
+          <img class="image" src="https://www.syracuse.com/resizer/Cj7sp4D9A2b_4IW--YiyJgJKUiQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z4JXG2AZEZB55IGXLKTBGGXTDQ.jpeg" width="400" height="350" >
+          <br>
+          <div class="movie">{{ rec_movie[2] }}</div>
+        </div>
+         <div class="movieCard">
+          <img class="image" src="https://www.syracuse.com/resizer/Cj7sp4D9A2b_4IW--YiyJgJKUiQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z4JXG2AZEZB55IGXLKTBGGXTDQ.jpeg" width="400" height="350" >
+          <br>
+          <div class="movie">{{ rec_movie[3] }}</div>
+        </div>
+          </div>
+    </div>
+<div class="movieSuggestions2">
+         <div class="movieCard">
+          <img class="image" src="https://www.syracuse.com/resizer/Cj7sp4D9A2b_4IW--YiyJgJKUiQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z4JXG2AZEZB55IGXLKTBGGXTDQ.jpeg" width="400" height="350" >
+          <br>
+          <div class="movie">{{ rec_movie[4] }}</div>
+        </div>
+         <div class="movieCard">
+          <img class="image" src="https://www.syracuse.com/resizer/Cj7sp4D9A2b_4IW--YiyJgJKUiQ=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/Z4JXG2AZEZB55IGXLKTBGGXTDQ.jpeg" width="400" height="350" >
+          <br>
+          <div class="movie">{{ rec_movie[5] }}</div>
+        </div>
+</div>
+
+</div>
+
+</body>
+</html>

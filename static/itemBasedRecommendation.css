@@ -1,0 +1,100 @@
+ .title{
+ margin-left:105px;
+
+ }
+ header h1 {
+
+  display:inline-block;
+  font-size: 55px;
+  line-height: .8;
+  top: 20px;
+  text-align:center;
+  color:white;
+
+}
+header h1 span {
+   display: block;
+  font-size: 48px;
+  text-align: center;
+  margin-top:10px;
+}
+h3{
+text-align:center;
+margin-top:20px;
+font-size:27px;
+margin-bottom:30px;
+color:white;
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black	;
+}
+.movie{
+font-size:20px;
+text-align:center;
+padding-top:10px;
+color:white;
+}
+.movieSuggestions {
+
+float:left;
+margin-left:300px;
+margin-top:20px;
+background-color: black;
+
+}
+.movieSuggestions2 {
+float:left;
+margin-top:100px;
+margin-left:500px;
+margin-top:20px;
+background-color: black;
+
+}
+.movieCard{
+
+    float:left;
+
+    width:400px;
+
+    height:350px;
+
+    border:#CCC solid 1px;
+
+    background-color: white;
+
+    margin-right: 35px;
+    margin-bottom:60px;
+    margin-left: 4px;
+
+
+
+}
+.icon {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 250%;
+
+    padding-left:40px;
+
+  }
+.Underline{
+display:inline-block;
+margin-left:35rem;
+}
+.link{
+display:inline-block;
+float:left;
+margin-top:2rem;
+
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <title>KN Movie Recommendation</title>
+    <link rel = "icon" href =
+	"https://st3.depositphotos.com/27847728/34645/v/600/depositphotos_346456758-stock-illustration-initial-kn-letter-logo-design.jpg"
+     type = "image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/contentBasedRecommendation.css">
+</head>
+<body>
+
+
+  <div class="all">
+
+    <header>
+      <div class="link">
+       <a href="/" ><div class="icon icon-fill"><i class="fa fa-home" id="home"></i></div></a>
+        </div>
+
+        <h1 class="Underline">Movie Recommendation <span>System</span></h1>
+
+     <h3> Showing Similar Movies: {{search_name}}</h3>
+
+    </header>
+
+
+    <div class="container" >
+      <div class="box" id="image1">
+        <div class="date">
+          {{ movie_date[0] }}
+          <span class="tv_ico"><img src="http://www.cartaodental.com/nbase/image/pc.svg"></span>
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[0]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[0] }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="image2">
+        <div class="date">
+          {{ movie_date[1] }}
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[1]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[1] }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="image3">
+        <div class="date">
+          {{ movie_date[2] }}
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[2]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[2] }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+   <div class="container">
+
+      <div class="box" id="image4">
+        <div class="date">
+          {{ movie_date[3] }}
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[3]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[3] }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="image5">
+        <div class="date">
+          {{ movie_date[4] }}
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[4]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[4] }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="image6">
+        <div class="date">
+          {{ movie_date[5] }}
+        </div>
+        <div class="content">
+          <div class="title">
+            {{ movie_names[5]}}
+          </div>
+          <div class="text">
+
+          </div>
+        </div>
+        <div class="summary">
+
+          <div class="content-summary">
+            <div class="title">The Plot Of The Movie</div>
+            <div class="text">{{ movie_overview[5] }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</div >
+
+<!-- partial -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[0]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image1').style.backgroundImage = urlString;
+	 document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image1').style.backgroundSize = "cover";
+
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[1]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image2').style.backgroundImage = urlString;
+	 document.getElementById('image2').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image2').style.backgroundSize = "cover";
+
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[2]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image3').style.backgroundImage = urlString;
+	 document.getElementById('image3').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image3').style.backgroundSize = "cover";
+
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[3]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image4').style.backgroundImage = urlString;
+	 document.getElementById('image4').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image4').style.backgroundSize = "cover";
+
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[4]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image5').style.backgroundImage = urlString;
+	 document.getElementById('image5').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image5').style.backgroundSize = "cover";
+
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movie_id[5]}}+"?api_key=ef61361fb39ed482f6b475ceff9d9261&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('image6').style.backgroundImage = urlString;
+	 document.getElementById('image6').style.backgroundRepeat = "no-repeat";
+	  document.getElementById('image6').style.backgroundSize = "cover";
+
+});
+
+
+</script>
+  </div>
+</body>
+</html>

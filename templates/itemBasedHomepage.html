@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>KN Movie Recommendation</title>
+    <link rel = "icon" href =
+	"https://st3.depositphotos.com/27847728/34645/v/600/depositphotos_346456758-stock-illustration-initial-kn-letter-logo-design.jpg"
+     type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/itemBasedHomepage.css">
+    <script type="text/javascript">
+
+  </script>
+
+</head>
+<body>
+<div class="link">
+       <a href="/" ><div class="icon icon-fill"><i class="fa fa-home" id="home"></i></div></a>
+        </div>
+    <header>
+        <h1>Movie Recommendation  <span>System </span></h1>
+</header>
+<div id="gradient"></div>
+<form class="searchbox" action="/itemBasedRecommendation" method="POST">
+        <input type="search" autocomplete="off" name="movie" placeholder="Enter a full movie name" />
+        <button type="submit" value="search">&nbsp;</button>
+    </form>
+
+
+
+
+     <h2 id="popular">Popular Movies</h2>
+ <div class=container>
+ <div class="container1">
+ <span class="imdb">8.0 </span>
+ <img class="image" id="image1"src="https://izlebizle.files.wordpress.com/2011/03/the-prestige.jpg"  width="300" height="350">
+
+
+   <div class="isim">The Prestige </div>
+ </div>
+ <div class="container1">
+ <span class="imdb">8.5</span>
+  <img class="image" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"  width="300" height="350">
+ <br>
+<div class="isim">The Godfather</div>
+ </div>
+ <div class="container1">
+ <span class="imdb"> 8.3</span>
+ <img class="image" src="https://m.media-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"  width="300" height="350">
+ <br>
+ <div class="isim">Life Is Beautiful</div>
+ </div>
+ <div class="container1">
+ <span class="imdb"> 8.3</span>
+ <img class="image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNgTszE1phYg2G7H4RrgeSEssOw-Kpnh0Si-sF5pVQQrBXJ_6e"  width="300" height="350">
+ <br>
+ <div class="isim">Fight Club</div>
+ </div>
+ <div class="container1">
+ <span class="imdb"> 8.5</span>
+ <img class="image" src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"  width="300" height="350">
+ <br>
+ <div class="isim"> The Shawshank Redemption </div>
+ </div>
+ </div>
+
+
+
+
+
+
+
+
+
+  <div class=container>
+ <div class="container3">
+ <span class="imdb">8.1</span>
+ <img class="image" id="image2"src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"  width="300" height="350">
+ <br>
+   <div class="isim">The Lord of the Rings: The Return of the King</div>
+ </div>
+ <div class="container3">
+ <span class="imdb">7.9</span>
+  <img class="image" src="https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"  width="300" height="350">
+ <br>
+<div class="isim"> Harry Potter and the Deathly Hallows: Part 2</div>
+ </div>
+ <div class="container3">
+ <span class="imdb">7.9</span>
+ <img class="image" src="http://www.movienewsletters.net/photos/005596R1.jpg"  width="300" height="350">
+ <br>
+ <div class="isim"> Full Metal Jacket</div>
+ </div>
+ <div class="container3">
+ <span class="imdb"> 8.2</span>
+ <img class="image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuhFZT3lQfr0vDy4XWMHQ8X93FWuamEuw_5iB4dmOTxc_w79rA"  width="300" height="350">
+ <br>
+ <div class="isim">12 Angry Men</div>
+ </div>
+ <div class="container3">
+ <span class="imdb"> 8.2</span>
+ <img class="image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgZqWs8at0E7djB-Rgntwg_fzuZwWl96llZQl6QkHIDHggZSsf"  width="300" height="350">
+ <br>
+ <div class="isim">The Green Mile </div>
+ </div>
+ </div>
+
+
+
+
+  <div class=container>
+ <div class="container3">
+ <span class="imdb">7.8	</span>
+ <img class="image" id="image3"src="https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"  width="300" height="350">
+ <br>
+   <div class="isim"> Shutter Island</div>
+ </div>
+ <div class="container3">
+ <span class="imdb">7.8 </span>
+ <img class="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJKJ6lGwFMrQR0gDdFAp0KU4kJ5WYhEpB8GcrQtlhrcAQ75QV-"  width="300" height="350">
+ <br>
+<div class="isim"> 3 Idiots</div>
+ </div>
+ <div class="container3">
+ <span class="imdb"> 7.9</span>
+ <img class="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHphxR0sT6_d4wQtGaKpJmsnuaOmrMjpVLvvpkUms9AwsD1Guz"  width="300" height="350">
+ <br>
+ <div class="isim"> Mr. Nobody</div>
+ </div>
+ <div class="container3">
+ <span class="imdb"> 7.8 </span>
+ <img class="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPRz9ZC7T1WNfSz_9k7f4WPnrC6ugajt5UeQpXGPDtINx8KzwL"  width="300" height="350">
+ <br>
+ <div class="isim"> The Breakfast Club</div>
+ </div>
+ <div class="container3">
+ <span class="imdb">7.6	</span>
+ <img class="image" src="http://www.movienewsletters.net/photos/041792R1.jpg"  width="300" height="350">
+ <br>
+ <div class="isim"> Big Fish </div>
+ </div>
+ </div>
+
+</div>
+</body>
+</html>
