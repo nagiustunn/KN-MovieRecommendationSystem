@@ -50,3 +50,9 @@ This is carried out by finding each pair of items rated / viewed / liked / click
   * unzip and open folder with any Python ide
   * download dependencies
   * run app.py
+
+# Developer
+
+  * Nagihan Üstün
+  * Kerem Koçdemir
+
